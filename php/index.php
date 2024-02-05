@@ -1,10 +1,12 @@
 <?php
 
+$URI = "?amount=5";
+
 # Inicializa o cURL
 $ch = curl_init();
 
 # Configura a URL (endpoint da API do Open Trivia Database)
-curl_setopt($ch, CURLOPT_URL, "https://opentdb.com/api.php?amount=5");
+curl_setopt($ch, CURLOPT_URL, "https://opentdb.com/api.php{$URI}");
 
 # Configura a opção para retornar a resposta como uma string
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -24,3 +26,5 @@ curl_close($ch);
 
 # Decodifica a resposta JSON
 $data = json_decode($response, true);
+
+print_r($response);
