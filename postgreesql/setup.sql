@@ -12,3 +12,20 @@ CREATE TABLE jogadas(
     dificuldade VARCHAR(8) NOT NULL,
     tentativas INT NOT NULL
 );
+
+/*
+*Jogadas*
+ID da jogada
+ID do jogo
+ID do jogador
+Nome do jogador
+ID da pergunta (estrangeira)
+Se acertou ou errou (boolean)
+
+*Perguntas*
+ID da pergunta (int serial)
+Pergunta (varchar)
+Resposta correta
+Respostas incorretas
+Resposta do jogador
+*/

@@ -1,6 +1,6 @@
 <?php
 
-$URI = "?amount=5";
+$URI = "?amount=1";
 
 # Inicializa o cURL
 $ch = curl_init();
